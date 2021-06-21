@@ -1,32 +1,57 @@
-function checkDriverAge(age){
-	var age = prompt("What is your age?");
-	if (Number(age) < 18) {
-		alert("Sorry, you are too young to drive this car. Powering off");
-	} else if (Number(age) > 18) {
-		alert("Powering on. Enjoy the ride!");
-	} else if (Number(age) === 18){
-		alert("Congratulations on your first year of driving. Enjoy the ride!");
+var database = [
+	{
+	username:"andrei",
+	password:"supersecret"
+	}, 
+	{
+	username:"sally",
+	password:"123"
+	}, 
+	{
+	username:"ingrid",
+	password:"777"
 	}
+];
+
+var newsFeed = [
+	{
+	username:"Bobby",
+	timeline:"So tired from all that learning"
+	},
+	{
+	username:"Sally",
+	timeline:"Javascript is sooo cooool!"
+	},
+	 {
+	username:"user4",
+	timeline:"123"
+	}
+];
+
+var userNamePrompt = prompt("Whaẗ́'s your username?");
+var passwordPrompt = prompt("what's your password?");
+
+function isUserValid(username, password) {
+	for (var i=0; i <database.length; i++) {
+		if(database[i].username === username &&
+			database[i].password === password) {
+			return true;
+		}
+	}
+	return false;
 }
 
 
-var checkDriverAge2 = function(){
-	var age = prompt("What is your age?");
-	if (Number(age) < 18) {
-		alert("Sorry, you are too young to drive this car. Powering off");
-	} else if (Number(age) > 18) {
-		alert("Powering on. Enjoy the ride!");
-	} else if (Number(age) === 18){
-		alert("Congratulations on your first year of driving. Enjoy the ride!");
-	}
+function signIn(username, password) {
+
+	for (var i=0; i < database.length; i++) {
+	if(database[i].username === username &&
+		database[i].password === password){
+		console.log(newsFeed);
+		} else {
+			alert("Sorry, wrong username and password");
+		}
+}
 }
 
-function checkDriverAge3(age){
-	if (Number(age) < 18) {
-		return "Sorry, you are too young to drive this car. Powering off";
-	} else if (Number(age) > 18) {
-		return "Powering on. Enjoy the ride!";
-	} else if (Number(age) === 18){
-		return "Congratulations on your first year of driving. Enjoy the ride!";
-	}
-}
+signIn(userNamePrompt, passwordPrompt);
