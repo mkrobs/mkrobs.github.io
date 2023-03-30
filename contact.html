@@ -47,47 +47,44 @@
                 <a class="lang-select" id="svTranslator" href="sv/index.html">SV</a>
         </div>
     </header>
-    <div class="banner-parallax"></div>
-    <div class="title-low-container">
-        <div class="title-element-low">
-            <h1 class="title inverted" lng-tag="title-low"></h1>
-        </div>
-    </div>
-    <div class="home-contact">
-        <a href="contact.html">
-            <button class="contact-button" type="button" lng-tag="c-button"></button>
-        </a>
-    </div>
-    <div class="container">
-        <div class="sec-photo">
-           <a href="wedding.html"> <img class="photo-frame" src="img/front-page/wedding.jpg" /></a>
-                <div>
-                    <a href="wedding.html"  class="photo-text" lng-tag="wedding">
-                    </a>
-                </div>
-        </div>
-        <!--<div class="sec-photo">
-            <img class="photo-frame" src="img/front-page/couples.jpg" />
-                <div>
-                     <a href="couples.html" class="photo-text" lng-tag="couples">
-                     </a>
-                </div>
-        </div>-->
-        <div class="sec-photo">
-            <img class="photo-frame" src="img/front-page/portrait.jpg" />
-                <div>
-                     <a href="portrait.html" class="photo-text" lng-tag="portrait">
-                     </a>
-                </div>
-        </div>
-        <!--<div class="sec-photo last">
-            <img class="photo-frame" src="img/front-page/event.jpg" />
-                <div>
-                    <a href="event.html" class="photo-text" lng-tag="event"></a>
-                </div>
-        </div>-->
-    </div>
     <div class="header-spacer"></div>
+
+    <div class="contact-contain">
+        <div></div>
+        <div class="contact-form">
+        <div>
+         <h1>Contact Us!</h1>
+        </div>
+        <div>
+         <form id="contactForm" class="data">
+            <input
+               type="text"
+               id="name"
+               placeholder="Your name"
+               />
+            <input
+               type="email"
+               id="email"
+               placeholder="Your email"
+               />
+            <input
+               type="text"
+               id="subject"
+               placeholder="Subject"
+               />
+            <textarea
+               placeholder="Your message"
+               id="message"
+               ></textarea>
+            <button id="submit">Send Message</button>
+         </form>
+        </div>
+      </div>
+      <div></div>
+    </div>
+   
+    <script src="js/contact.js" type="module"></script>
+    
 	<footer>
         <div class="footer-container">
             <div class="footer-left">
