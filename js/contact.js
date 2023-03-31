@@ -56,7 +56,7 @@ const config = {
             }
 
              else {
-             set(ref(db, "Messages/" + randomId),{
+             set(ref(db, "Messages/" + randomId + enterName.value),{
                  Name: enterName.value,
                  Email: enterEmail.value,
                  Subject: enterSubject.value,

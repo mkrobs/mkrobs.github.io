@@ -216,9 +216,15 @@ a.link-none:hover {
   
 }
 
-.banner-parallax {
- 
+.couple {
   background-image: url("../img/front-page/background.jpg");
+}
+
+.church {
+  background-image: url("../img/front-page/church-wide.jpg");
+}
+
+.banner-parallax {
   min-height: 750px; 
   width: 100%;
   background-attachment: fixed;
@@ -231,7 +237,12 @@ a.link-none:hover {
   .banner-parallax {
     background-attachment: scroll;
   }
+  .banner-parllax {
+    background-attachment: scroll;
+  }
 }
+
+
 
 .title-low-container {
   margin: 100px 0px;
@@ -372,13 +383,17 @@ a.lang-select {
 
 .container {
     padding: 0px;
-    margin: 30px 0px;
+    margin: 50px 0px;
     position: relative;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.center {
+  justify-content: center;
 }
 
 .container a{
@@ -648,7 +663,7 @@ a.lang-select {
   }
 
   .home-contact {
-    margin: 100px 0px;
+    margin: 100px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -694,23 +709,15 @@ a.lang-select {
 }
   
   
-  
 
-  .contact-contain {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
-  }
 
   .contact-form {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
     padding:10px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    width: 900px;
+    border-style: solid;
   }
 
   
@@ -719,9 +726,7 @@ a.lang-select {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
     margin: 10px;
-    box-sizing: border-box;
   }
 
   .contact-form form {
@@ -743,21 +748,25 @@ a.lang-select {
     border-bottom: 1px, solid, black;
   }
 
-.contact-form button{
-  background-color: #62c1e3;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-size: 20px;
+  .contact-form button{
+    background-color: #62c1e3;
+    color: white;
+    padding: 16px 20px;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
 
-}
 
-.contact-form input[type=submit]:hover {
-  background-color: #afdcf4;
-  border: none;
-}
+  }
+
+  .contact-form input[type=submit]:hover {
+    background-color: #afdcf4;
+    border: none;
+  }
 
   .contact-form textarea{
     padding: 10px;
@@ -784,11 +793,11 @@ a.lang-select {
   position: relative;
   padding: 0px;
   margin: 25px;
-  border: 2px solid black;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 10px 10px 5px rgb(152, 152, 152);
 }
 
 .pricing img {
@@ -830,6 +839,10 @@ a.lang-select {
 
 .card-text {
   margin: 5px 10px
+}
+
+.card-text p{
+  text-align: left;
 }
 
 .italic {
