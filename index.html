@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/photoswipe.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
     <script src="js/translate.js"></script>
     <script src="js/index.js"></script>
     <script type="module">
@@ -43,7 +42,7 @@
         </div>
         <div class="topnav" id="navMenu">
             <a href="javascript:void(0);" class="icon" onclick="showMenu()">
-                <div class="menu-icon">
+                <div id="hamburger" class="menu-icon">
                      <div></div>
                      <div></div>
                      <div></div>
@@ -73,7 +72,7 @@
     </div>
     <div class="home-contact">
         <a href="about.html">
-            <button class="contact-button" type="button" lng-tag="about"></button>
+            <button class="contact-button" type="button" lng-tag="a-button"></button>
         </a>
     </div>
 </div>
@@ -223,11 +222,7 @@
     </div>
 
 
-    <div class="container">
-        <div class="full-width-image">
-            <img src="img/full-width.jpg" />
-        </div>
-    </div>
+    
 <!--
     <div class="container">
         <div class="sec-photo">
@@ -286,5 +281,6 @@
             <p lng-tag="footer"></p>
         </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
