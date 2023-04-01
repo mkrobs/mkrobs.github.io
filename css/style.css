@@ -810,10 +810,6 @@ a.lang-select {
   justify-content: center;
 }
 
-.container div{
-  border-style: solid;
-}
-
 @media screen and (max-width: 414px) {
   .price-card-title {
     padding-bottom: 150px;
