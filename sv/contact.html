@@ -11,7 +11,7 @@
     <script src="../js/translate.js"></script>
     <script src="../js/index.js"></script>
 </head>
-<body class="home" onload="translate('en','lng-tag')">
+<body class="home" onload="translate('sv','lng-tag')">
     <header id="stickyheader">
         <div>
             <a href="index.html">
@@ -41,36 +41,61 @@
             <a href="portrait.html" lng-tag="portrait"></a>-->
             <a href="about.html" lng-tag="about"></a>
             <a href="contact.html" lng-tag="contact"></a>
-                <a class="lang-select" id="enTranslator" href="javascript:void(0);">EN</a>
-                <a class="lang-select" id="fiTranslator" href="../index.html;">FI</a>
-                <a class="lang-select" id="svTranslator" href="../sv/index.html">SV</a>
+                <a class="lang-select" id="enTranslator" href="../en/index.html">EN</a>
+                <a class="lang-select" id="fiTranslator" href="../index.html">FI</a>
+                <a class="lang-select" id="svTranslator" href="javascript:void(0);">SV</a>
         </div>
     </header>
     <div class="header-spacer"></div>
 
-    <!-- Image with side text right-->
-       <div class="container-center-align">
-        <div class="two-elements">
-            <img src="../img/about/about.jpg" alt="">
-        </div>
-
+    <div class="container">
+      <div class="contact-form">
         <div>
-            <p class="two-elements-text" lng-tag="about-content"></p>
+          <h1 lng-tag="contact">Kontakta oss!</h1>
         </div>
-       </div>
+        <div>
+         <form id="contactForm" class="data">
+            <input
+               type="text"
+               id="name"
+               placeholder="Ditt namn"
+               required
+               />
+            <input
+               type="email"
+               id="email"
+               placeholder="e-post"
+               required
+               />
+            <input
+               type="text"
+               id="subject"
+               placeholder="Ämne"
+               required
+               />
+            <textarea
+               placeholder="Meddelande"
+               id="message"
+               required
+               ></textarea>
+            <button id="submit">Skicka meddelande</button>
+         </form>
+        </div>
+      </div>
+    </div>
 	<footer>
         <div class="footer-container">
             <div class="footer-left">
                 <div class="low-menu-lang">
-                    <a id="enTranslator" href="javascript:void(0);">EN</a>
+                    <a id="enTranslator" href="../en/index.html">EN</a>
                     <a id="fiTranslator" href="../index.html">FI</a>
-                    <a id="svTranslator" href="../sv/index.html">SV</a>
+                    <a id="svTranslator" href="javascript:void(0);">SV</a> 
                 </div>
                 <div class="low-menu">
-                   <!-- <a href="wedding.html" lng-tag="wedding"></a>
-                    <a href="portrait.html" lng-tag="pricing"></a>-->
-                    <a href="contact.html" lng-tag="contact"></a>
+                    <!--<a href="wedding.html" lng-tag="wedding"></a>
+                    <a href="contact.html" lng-tag="contact"></a>-->
                     <a href="about.html" lng-tag="about"></a>
+                    <a href="portrait.html" lng-tag="pricing"></a>
                 </div>
             </div>
             <div class="footer-right">
@@ -83,7 +108,8 @@
         <div>
             <p lng-tag="footer"></p>
         </div>
-    </footer>
+    <script src="../js/contact-sv.js" type="module"></script>   
     <script type="text/javascript" src="../js/script.js"></script>
+    </footer>
 </body>
 </html>
