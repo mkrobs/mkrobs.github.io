@@ -812,7 +812,10 @@ a.lang-select {
   justify-content: center;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> f977ed9208b1d9f6bda3eec77f68309cd791d36a
 @media screen and (max-width: 414px) {
   .price-card-title {
     padding-bottom: 150px;
@@ -894,7 +897,10 @@ a.lang-select {
 .gallery-hover img:hover {
   opacity: 0.80;
 }
+<<<<<<< HEAD
 
 .bkg-card {
   background-color: #55C282;
 }
+=======
+>>>>>>> f977ed9208b1d9f6bda3eec77f68309cd791d36a
